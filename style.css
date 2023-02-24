@@ -78,6 +78,10 @@ h1{
   color: gold;
 }
 
+.projects h2{
+  cursor: pointer;
+}
+
 .projects h2:hover, h3:hover{
   color: yellow;
 }
