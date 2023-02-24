@@ -19,8 +19,8 @@ body{
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 h1{
@@ -45,34 +45,43 @@ h1{
   opacity: 1;
 }
 
-.projects {
+#introduction #myself {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: -17px;
+  right: 17px;
+}
+
+.project1 {
   height: 500px;
   position: absolute;
-  opacity: 0;
   display: inline-block;
   max-width: 30%;
   left: 10%;
   top: 100%;
-  text-align: left;
+  text-align: center;
 }
 
-.projects #corner5 {
+.project2 {
+  height: 500px;
   position: absolute;
-  left: -50px;
-  top: -40px;
-  opacity: 1;
-  height: 100px;
-  width: 200px;
+  display: inline-block;
+  max-width: 30%;
+  right: 10%;
+  top: 100%;
+  text-align: center;
 }
 
-.projects #corner6{
+#down {
+  height: 50px;
   position: absolute;
-  right: -50px;
-  bottom: 80px;
+  right: 46%;
+  bottom: 40px;
   opacity: 1;
-  height: 100px;
-  width: 200px;
+  width: 100px;
 }
+
 
 .projects li:hover{
   color: gold;
@@ -107,14 +116,14 @@ footer {
 }
 
 .corners #corner2 {
-  position: absolute;
+  position: fixed;
   right: 0;
   opacity: 0;
   top: 60px;
 }
 
 .corners #corner3 {
-  position: fixed;
+  position: absolute;
   bottom: 60px;
   opacity: 1;
   right: 0;

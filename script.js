@@ -17,21 +17,21 @@ function closeNav() {
 // Function to make corners transparent on scroll
 function fadeOut() {
   var image1 = document.getElementById("corner1");
-  var image2 = document.getElementById("corner2");
+  var image3 = document.getElementById("corner3");
   var intro =  document.getElementById("introduction");
   var opacity = 1 - window.pageYOffset/500;
   image1.style.opacity = opacity.toString();
-  image2.style.opacity = opacity.toString();
+  image3.style.opacity = opacity.toString();
   intro.style.opacity = opacity.toString();
 }
 
 // Function to make corners opaque on scroll
 function fadeIn() {
-  var image3 = document.getElementById("corner3");
+  var image2 = document.getElementById("corner2");
   var image4 = document.getElementById("corner4");
   var project = document.getElementById("projects");
   var opacity = window.pageYOffset/500;
-  image3.style.opacity = opacity.toString();
+  image2.style.opacity = opacity.toString();
   image4.style.opacity = opacity.toString();
   project.style.opacity = opacity.toString();
 }
