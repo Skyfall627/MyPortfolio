@@ -1,0 +1,260 @@
+/* Fonts imported from google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: azure;
+  }
+
+body{
+  height: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.9);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+h1{
+  font-size: 4rem;
+  display: block;
+  left: 10%;
+  position: absolute;
+  top: 30%;
+}
+
+#Intro {
+  display: block;
+  position: absolute;
+  max-width: 50%;
+  justify-content: center;
+  top: 50%;
+  left: 10%;
+  text-align: left;
+}
+
+#introduction {
+  opacity: 1;
+}
+
+.projects {
+  height: 500px;
+  position: absolute;
+  opacity: 0;
+  display: inline-block;
+  max-width: 30%;
+  left: 10%;
+  top: 100%;
+  text-align: left;
+}
+
+.projects #corner5 {
+  position: absolute;
+  left: -50px;
+  top: -40px;
+  opacity: 1;
+  height: 100px;
+  width: 200px;
+}
+
+.projects #corner6{
+  position: absolute;
+  right: -50px;
+  bottom: 80px;
+  opacity: 1;
+  height: 100px;
+  width: 200px;
+}
+
+.projects li:hover{
+  color: gold;
+}
+
+.projects h2:hover, h3:hover{
+  color: yellow;
+}
+
+footer { 
+  width: 100%; 
+  position: fixed; 
+  z-index: 1; 
+  bottom: 0; 
+  background-color: rgb(37, 37, 37); 
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 50px; 
+  transition: 0.5s; 
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+}
+
+.corners #corner1 {
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  top: 60px;
+}
+
+.corners #corner2 {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  top: 60px;
+}
+
+.corners #corner3 {
+  position: fixed;
+  bottom: 60px;
+  opacity: 1;
+  right: 0;
+}
+
+.corners #corner4 {
+  position: fixed;
+  bottom: 60px;
+  opacity: 0;
+  left: 0;
+}
+
+#gmail {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  bottom: 10px;
+  left: 60%;
+}
+
+#linkedin {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  bottom: 10px;
+  left: 40%;
+}
+
+#github {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  bottom: 10px;
+  left: 50%;
+}
+
+
+
+
+.button {
+  border: none;
+  font-size: 19px;
+  color: azure;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease,box-shadow 0.15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  margin: auto;
+  margin-bottom: -4%;
+}
+
+.button button:hover{
+  color: yellow;
+}
+
+.button button:hover ~ i{
+  color: yellow;
+}
+
+/* The Navigation Menu */
+
+.rightbar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(37, 37, 37); 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+
+  }
+  
+.rightbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: inline-block;
+    position: absolute;
+    transition: 0.3s;
+    left: 40%;
+    top: 6px;
+  }
+  
+.rightbar .closebtn {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  
+.rightbar .closebtn:hover {
+  color: yellow;
+}
+
+.rightbar .PP:hover {
+    color: yellow;
+}
+
+.rightbar .II:hover {
+  color: yellow;
+}
+
+.rightbar .LL:hover {
+  color: rgb(141, 0, 0);
+}
+
+.burger {
+    padding: 15px;
+    color: azure;
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37); 
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+    overflow: hidden;
+  }
+
+.burger #mini:hover{
+   color: yellow;
+   cursor: pointer;
+}
+
