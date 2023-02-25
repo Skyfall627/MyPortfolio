@@ -217,56 +217,82 @@ img {
   left: 50%;
 }
 
+#stick1 {
+  position: absolute;
+  bottom: -10%;
+  width: 300px;
+  left: 39.6%;
+}
+
+#stick2 {
+  position: absolute;
+  bottom: -70%;
+  left: 5%;
+  width: 1380px; 
+}
+
 @media only screen and (max-width: 600px) {
   
-#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12 {
+  #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12 {
   display: none;
 }
 
-.corners #corner2 {
-  position: absolute;
-  top: 110%;
-  right: 40px;
-  height: 50px;
-  width: 50px;
+  .corners #corner2 {
+    position: absolute;
+    top: 110%;
+    right: 40px;
+    height: 50px;
+    width: 50px;
 }
 
-.corners #corner4 {
-  position: absolute;
-  top: 110%;
-  left: 40px;
-  height: 50px;
-  width: 50px;
+  .corners #corner4 {
+    position: absolute;
+    top: 110%;
+    left: 40px;
+    height: 50px;
+    width: 50px;
 }
 
-#arrow {
-  height: 40px;
-  width: 40px;
+  #stick1 {
+    bottom: -28%;
+    width: 200px;
+    left: 25%;
+}
+
+  #stick2 {
+    bottom: -112%;
+    left: 5%;
+    width: 360px; 
+}
+
+  #arrow {
+    height: 40px;
+    width: 40px;
   }
 
-#down{
-  right: 45%;
-  bottom: 7%;  
+  #down{
+    right: 45%;
+    bottom: 7%;  
 }
 
-#up {
-  right: 45%;
-  bottom: -210%;
+  #up {
+    right: 45%;
+    bottom: -210%;
 }
 
-#gmail {
-  bottom: 10px;
-  left: 80%;
+  #gmail {
+    bottom: 10px;
+    left: 80%;
 }
 
-#linkedin {
-  bottom: 10px;
-  left: 10%;
+  #linkedin {
+    bottom: 10px;
+    left: 10%;
 }
 
-#github {
-  bottom: 10px;
-  left: 45%;
+  #github {
+    bottom: 10px;
+    left: 45%;
 }
 
 

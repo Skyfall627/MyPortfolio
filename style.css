@@ -264,12 +264,13 @@ footer {
     top: 110%;
     left: 30%;
   }
+
   .project1 {
     height: 500px;
     position: absolute;
     display: inline-block;
-    max-width: 45%;
-    left: 5%;
+    max-width: 46%;
+    left: 0%;
     top: 125%;
     text-align: center;
   }
@@ -278,8 +279,8 @@ footer {
     height: 500px;
     position: absolute;
     display: inline-block;
-    max-width: 45%;
-    right: 5%;
+    max-width: 46%;
+    right: 0%;
     top: 125%;
     text-align: center;
   }
@@ -288,8 +289,8 @@ footer {
     height: 500px;
     position: absolute;
     display: inline-block;
-    max-width: 30%;
-    left: 10%;
+    max-width: 46%;
+    left: 0%;
     top: 210%;
     text-align: center;
   }
@@ -298,8 +299,8 @@ footer {
     height: 500px;
     position: absolute;
     display: inline-block;
-    max-width: 30%;
-    right: 10%;
+    max-width: 46%;
+    right: 0%;
     top: 210%;
     text-align: center;
   }
