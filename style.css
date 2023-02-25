@@ -45,14 +45,6 @@ body{
   top: 30%;
 }
 
-#introduction h3{
-  font-size: 1.5rem;
-  display: block;
-  right: 20%;
-  position: absolute;
-  top: 50%;
-}
-
 #intro {
   display: block;
   position: absolute;
@@ -60,16 +52,6 @@ body{
   justify-content: center;
   top: 40%;
   left: 10%;
-  text-align: left;
-}
-
-#skills {
-  display: block;
-  position: absolute;
-  max-width: 20%;
-  justify-content: center;
-  top: 37%;
-  right: 10%;
   text-align: left;
 }
 
@@ -244,5 +226,83 @@ footer {
 .burger #mini:hover{
    color: yellow;
    cursor: pointer;
+}
+
+/* In case website is opened in mobile */
+
+@media only screen and (max-width: 600px) {
+  body{
+    height: 2000px;
+  }
+  
+  #introduction h1{
+    font-size: 2.5rem;
+    display: block;
+    left: 15%;
+    position: absolute;
+    top: 20%;
+  }
+  
+  #introduction h2{
+    display: none;
+  }
+
+  #intro {
+    display: block;
+    position: absolute;
+    max-width: 85%;
+    justify-content: center;
+    top: 30%;
+    left: 10%;
+    text-align: left;
+  }
+
+  #projects h1{
+    font-size: 2.5rem;
+    position: absolute;
+    text-align: center;
+    top: 110%;
+    left: 30%;
+  }
+  .project1 {
+    height: 500px;
+    position: absolute;
+    display: inline-block;
+    max-width: 45%;
+    left: 5%;
+    top: 125%;
+    text-align: center;
+  }
+  
+  .project2 {
+    height: 500px;
+    position: absolute;
+    display: inline-block;
+    max-width: 45%;
+    right: 5%;
+    top: 125%;
+    text-align: center;
+  }
+  
+  .project3 {
+    height: 500px;
+    position: absolute;
+    display: inline-block;
+    max-width: 30%;
+    left: 10%;
+    top: 210%;
+    text-align: center;
+  }
+  
+  .project4 {
+    height: 500px;
+    position: absolute;
+    display: inline-block;
+    max-width: 30%;
+    right: 10%;
+    top: 210%;
+    text-align: center;
+  }
+
 }
 
