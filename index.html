@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
     <!-- Iconscout CSS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
     <!-- CSS -->
+    <link rel="stylesheet" href="img.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- JavaScript -->
@@ -22,15 +23,15 @@
 
 <nav id="Hamburger" class="rightbar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://skyfall627.github.io/MyPortfolio/index.html" class="II">Home</a>
-  <a href="https://skyfall627.github.io/MyPortfolio/index.html" class="II">CV</a>
-  <a href="https://skyfall627.github.io/MyPortfolio/index.html" class="II">Home</a>
+  <a href="#Hamburger" id="II">INTRO</a>
+  <a href="#projects" id="PP">PROJECTS</a>
+  <a href="#contacts" id="CC">CONTACTS</a>
 </nav>
 
 <div class="burger">
   <i onclick="openNav()" id="mini" class="uil uil-bars"></i>
 </div>
-
+<div id="top"></div>
 <!-- Little design import -->
 <div class="corners">
   <img src="https://skyfall627.github.io/MyPortfolio/ressources/corner1.png" id="corner1" alt="corner1">
@@ -43,7 +44,7 @@
 <div id="introduction">
     <header>
           <h1>Welcome.</h1>
-          <p id="Intro">
+          <p id="intro">
             I'm Simo, an aspiring Full Stack Developer and fresh graduate.
           I'm currently working on my personal portfolio website &lsaquo;This one&rsaquo;. 
           I am eager to apply my skills and expertise to real-world software projects as a Junior Software Engineer. 
@@ -51,17 +52,32 @@
           My academic background and adaptable learning style have prepared me to tackle new challenges and to be a quick learner in any technical environment.
           Down below are some projects i have completed and some that are still on-going.
           </p>
-          <img src="/ressources/down.png" id="down" alt="down">
-     </header>  
+          <h2>Skills & Technologies</h2>
+          <img src="/ressources/HTML.png" id="img1" class="logos" alt="HTML5">
+          <img src="/ressources/CSS.png" id="img2" class="logos" alt="CSS">
+          <img src="/ressources/JS.png" id="img3" class="logos" alt="JavaScript">
+          <img src="/ressources/python.png" id="img4" class="logos" alt="Python">
+          <img src="/ressources/java.png" id="img5" class="logos" alt="Java">
+          <img src="/ressources/SQL.png" id="img6" class="logos" alt="SQL">
+          <img src="/ressources/MySQL.png" id="img7" class="logos" alt="MySQL">
+          <img src="/ressources/unity.png" id="img8" class="logos" alt="Unity">
+          <img src="/ressources/jquery.png" id="img9" class="logos" alt="jQuery">
+          <img src="/ressources/nodejs.png" id="img10" class="logos" alt="Node.JS">
+          <img src="/ressources/C.png" id="img11" class="logos" alt="C#">
+          <img src="/ressources/react.png" id="img12" class="logos" alt="react.JS">
+     </header> 
+     <button type="button" id="down" onclick="scrollToId('projects')">
+      <img src="/ressources/down.png" id="arrow" alt="down">
+    </button> 
 </div>
 
 <div id="projects" class="projects">
-  
+  <h1>Projects</h1>
   <div class="project1">
   <a href="https://skyfall627.github.io/MyPortfolio/MyProjects/MSc-Coursework/login.php" target="_blank"><h2>Grade Calculator Website</h2></a>
   <br>
     <p>This project is a coursework i had to do for my MSc in Computer Science at Oxford Brookes University.</p>
-      <p>I only own the code and the project is not appropriating the Univeristy's name, images or data.</p>
+      <p>I only own the code and the project is only demonstrating what the website would look like if the Oxford Brookes Univeristy owned it.</p>
     <br>
     <h3>Technologies</h3>
     <br>
@@ -90,15 +106,47 @@
     </ul>
   </div>
 
+  <div class="project3">
+    <a href="" target="_blank"><h2>Template</h2></a>
+    <br>
+      <p>template template template template template template template template template template </p>
+      <p>template template template template template template template template template template </p>
+      <br>
+      <h3>Technologies</h3>
+      <br>
+      <ul>
+        <li>template </li>
+        <li>template </li>
+        <li>template </li>
+        <li>template </li>
+      </ul>
+    </div>
+
+  <div class="project4">
+    <a href="" target="_blank"><h2>Template</h2></a>
+    <br>
+      <p>template template template template template template template template template template </p>
+      <p>template template template template template template template template template template </p>
+      <br>
+      <h3>Technologies</h3>
+      <br>
+      <ul>
+        <li>template </li>
+        <li>template </li>
+        <li>template </li>
+        <li>template </li>
+      </ul>
+    </div>  
+
+    <button type="button" id="up" onclick="scrollToId('top')">
+      <img src="/ressources/down.png" id="arrow" alt="up">
+    </button>
 </div>
 
-
 <footer>
-  <ul>
     <a href="mailto:simosaidi1@gmail.com" target="_blank"><img src="https://skyfall627.github.io/MyPortfolio/ressources/gmail.png" id="gmail" alt="gmail"></a>
     <a href="https://github.com/SkyTrojan" target="_blank"><img src="https://skyfall627.github.io/MyPortfolio/ressources/github.png" id="github" alt="GitHub"></a>
     <a href="https://www.linkedin.com/in/ss627/" target="_blank"><img src="https://skyfall627.github.io/MyPortfolio/ressources/linkedin.png" id="linkedin" alt="LinkedIn"></a>
-  </ul>
 </footer>
 
 </body>

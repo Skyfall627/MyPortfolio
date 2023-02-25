@@ -1,7 +1,4 @@
-const container = document.querySelector(".container");
-
-    // Navigation menu animation
-
+// Navigation menu animation
 function openNav() {
   var burger = document.getElementById("Hamburger");
   burger.style.width = "100%";
@@ -40,3 +37,22 @@ window.addEventListener("scroll", function() {
   fadeOut();
   fadeIn();
 });
+
+
+// make the page scroll down after clicking the arrow
+function scrollToId(id) {
+  var element = document.getElementById(id);
+  if (element) {
+    var offset = element.offsetTop;
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth"
+    });
+  }
+}
+
+
+
+
+
+
