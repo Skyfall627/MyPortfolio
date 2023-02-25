@@ -9,5 +9,4 @@ MyPortfolio is a website that includes all the projects i'm working on from smal
 * CSS
 * JavaScript
 * Python
-* PHP
 * Node.js
