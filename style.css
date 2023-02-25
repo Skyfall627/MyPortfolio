@@ -11,7 +11,7 @@
   }
 
 body{
-  height: 1300px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +24,11 @@ body{
   justify-items: center;
 }
 
+#pinpoint{
+  position: absolute;
+  bottom: -30px;
+  justify-items: center;
+}
 
 #introduction {
   opacity: 1;
@@ -60,7 +65,7 @@ body{
   position: absolute;
   text-align: center;
   top: 95%;
-  left: 43%;
+  left: 45%;
 }
 
 .project1 {
@@ -86,7 +91,7 @@ body{
 .project3 {
   height: 500px;
   position: absolute;
-  display: inline-block;
+  display: none;
   max-width: 30%;
   left: 10%;
   top: 170%;
@@ -96,7 +101,7 @@ body{
 .project4 {
   height: 500px;
   position: absolute;
-  display: inline-block;
+  display: none;
   max-width: 30%;
   right: 10%;
   top: 170%;
@@ -133,7 +138,7 @@ footer {
 /* The Navigation Menu */
 
 .rightbar {
-    height: 100%; 
+    max-height: 50px; 
     width: 0; 
     position: fixed; 
     z-index: 1; 
@@ -142,7 +147,7 @@ footer {
     background-color: rgb(37, 37, 37); 
     overflow-x: hidden;
     overflow-y: hidden;
-    padding-top: 60px; 
+    padding-top: 50px; 
     transition: 0.5s; 
     box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
     text-decoration: none;
@@ -157,10 +162,10 @@ footer {
     position: absolute;
     transition: 0.3s;
     left: 23%;
-    top: 6px;
+    top: 4px;
   }
 
-.rightbar #CC {
+  .rightbar #PP {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -168,11 +173,11 @@ footer {
     display: inline-block;
     position: absolute;
     transition: 0.3s;
-    left: 63%;
-    top: 6px;
+    left: 45%;
+    top: 4px;
   }
-
-.rightbar #PP {
+  
+  .rightbar #CV {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -180,9 +185,11 @@ footer {
     display: inline-block;
     position: absolute;
     transition: 0.3s;
-    left: 43%;
-    top: 6px;
+    left: 75%;
+    top: 4px;
   }
+
+
   
 .rightbar .closebtn {
     display: inline-block;
@@ -199,7 +206,7 @@ footer {
   color: gold;
 }
 
-.rightbar #CC:hover {
+.rightbar #CV:hover {
     color: gold;
 }
 
@@ -232,8 +239,25 @@ footer {
 
 @media only screen and (max-width: 600px) {
   body{
-    height: 2000px;
+    height: 1230px;
   }
+  
+  .rightbar #II {
+    font-size: 20px;
+    left: 5%;
+  }
+
+  .rightbar #PP {
+    font-size: 20px;
+    left: 35%;
+  }
+  
+  .rightbar #CV {
+    font-size: 20px;
+    left: 75%;
+  }
+
+
   
   #introduction h1{
     font-size: 2.5rem;
@@ -262,7 +286,7 @@ footer {
     position: absolute;
     text-align: center;
     top: 110%;
-    left: 30%;
+    left: 35%;
   }
 
   .project1 {
@@ -270,7 +294,7 @@ footer {
     position: absolute;
     display: inline-block;
     max-width: 46%;
-    left: 0%;
+    left: 1%;
     top: 125%;
     text-align: center;
   }
@@ -280,7 +304,7 @@ footer {
     position: absolute;
     display: inline-block;
     max-width: 46%;
-    right: 0%;
+    right: 1%;
     top: 125%;
     text-align: center;
   }
@@ -288,9 +312,8 @@ footer {
   .project3 {
     height: 500px;
     position: absolute;
-    display: inline-block;
     max-width: 46%;
-    left: 0%;
+    left: 1%;
     top: 210%;
     text-align: center;
   }
@@ -298,9 +321,8 @@ footer {
   .project4 {
     height: 500px;
     position: absolute;
-    display: inline-block;
     max-width: 46%;
-    right: 0%;
+    right: 1%;
     top: 210%;
     text-align: center;
   }

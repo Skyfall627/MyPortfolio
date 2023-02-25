@@ -16,22 +16,26 @@
     <script src="script.js"></script>
 
     <title>My Portfolio</title>
+
+    <!-- Navigation Bar -->
+
+    <nav id="Hamburger" class="rightbar">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#Hamburger" id="II">INTRO</a>
+     <a href="#projects" id="PP">PROJECTS</a>
+     <a href="https://skyfall627.github.io/MyPortfolio/ressources/Mohammed_Saidi_CV.pdf" id="CV">CV</a>
+    </nav>
+
+    <div class="burger">
+      <i onclick="openNav()" id="mini" class="uil uil-bars"></i>
+    </div>
+
+    <div id="top"></div>
+
 </head>
+    
 <body>
 
-<!-- Navigation Bar -->
-
-<nav id="Hamburger" class="rightbar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#Hamburger" id="II">INTRO</a>
-  <a href="#projects" id="PP">PROJECTS</a>
-  <a href="#contacts" id="CC">CONTACTS</a>
-</nav>
-
-<div class="burger">
-  <i onclick="openNav()" id="mini" class="uil uil-bars"></i>
-</div>
-<div id="top"></div>
 <!-- Little design import -->
 <div class="corners">
   <img src="https://skyfall627.github.io/MyPortfolio/ressources/corner1.png" id="corner1" alt="corner1">
@@ -66,20 +70,22 @@
           <img src="https://skyfall627.github.io/MyPortfolio/ressources/nodeJS.png" id="img10" class="logos" alt="Node.JS">
           <img src="https://skyfall627.github.io/MyPortfolio/ressources/C.png" id="img11" class="logos" alt="C#">
           <img src="https://skyfall627.github.io/MyPortfolio/ressources/react.png" id="img12" class="logos" alt="react.JS">
-     <button type="button" id="down" onclick="scrollToId('projects')">
+          <img src="https://skyfall627.github.io/MyPortfolio/ressources/php.png" id="img13" class="logos" alt="PHP">
+
+     <button type="button" id="down" onclick="scrollToId('pinpoint')">
       <img src="https://skyfall627.github.io/MyPortfolio/ressources/down.png" id="arrow" alt="down">
     </button> 
       </header>  
 </div>
 
 <!-- Project ShowCase -->
-
+<div id="pinpoint"></div>
 
 <div id="projects" class="projects">
   <h1>Projects</h1>
   <img src="https://skyfall627.github.io/MyPortfolio/ressources/stick.png" id="stick1" alt="stick">
   <div class="project1">
-  <a href="https://skyfall627.github.io/MyPortfolio/MyProjects/MSc-Coursework/login.php" target="_blank"><h2>Grade Calculator Website</h2></a>
+  <a href="https://github.com/Skyfall627/MyProjects/tree/main/MSc-Coursework" target="_blank"><h2>Grade Calculator Website</h2></a>
   <br>
     <p>This project is a coursework i had to do for my MSc in Computer Science at Oxford Brookes University.</p>
       <p>I only own the code and the project is only demonstrating what the website would look like if Oxford Brookes Univeristy owned it.</p>

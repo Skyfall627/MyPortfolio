@@ -119,11 +119,20 @@ img {
   right: 12%;
 }
 
+#img13 {
+  display: block;
+  position: absolute;
+  height: 60px;
+  width: 80px;
+  top: 40%;
+  right: 7%;
+}
+
 #down {
   height: 50px;
   width: 50px;
   position: absolute;
-  right: 47.4%;
+  left: 49.3%;
   bottom: 50px;
   opacity: 1;
   cursor: pointer;
@@ -137,8 +146,8 @@ img {
   height: 50px;
   width: 50px;
   position: absolute;
-  right: 47.4%;
-  bottom: -133%;
+  left: 49.3%;
+  bottom: -73%;
   opacity: 1;
   cursor: pointer;
   background-color: transparent;
@@ -221,11 +230,13 @@ img {
   position: absolute;
   bottom: -10%;
   width: 300px;
+  display: none;
   left: 39.6%;
 }
 
 #stick2 {
   position: absolute;
+  display: none;
   bottom: -70%;
   left: 5%;
   width: 1380px; 
@@ -233,7 +244,7 @@ img {
 
 @media only screen and (max-width: 600px) {
   
-  #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12 {
+  #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13 {
   display: none;
 }
 
@@ -256,13 +267,13 @@ img {
   #stick1 {
     bottom: -28%;
     width: 200px;
-    left: 25%;
+    left: 32%;
 }
 
   #stick2 {
     bottom: -112%;
     left: 5%;
-    width: 360px; 
+    width: 360px;
 }
 
   #arrow {
@@ -271,18 +282,18 @@ img {
   }
 
   #down{
-    right: 45%;
+    left: 45.5%;
     bottom: 7%;  
 }
 
   #up {
-    right: 45%;
-    bottom: -210%;
+    left: 45.5%;
+    bottom: -96%;
 }
 
   #gmail {
     bottom: 10px;
-    left: 80%;
+    left: 85%;
 }
 
   #linkedin {
@@ -292,7 +303,7 @@ img {
 
   #github {
     bottom: 10px;
-    left: 45%;
+    left: 47.3%;
 }
 
 
