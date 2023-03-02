@@ -91,7 +91,7 @@ body{
 .project3 {
   height: 500px;
   position: absolute;
-  display: none;
+  display: inline-block;
   max-width: 30%;
   left: 10%;
   top: 170%;
