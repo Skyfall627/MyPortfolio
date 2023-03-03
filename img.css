@@ -14,28 +14,31 @@ img {
 #img1 {
   display: block;
   position: absolute;
-  height: 70px;
+  height: 80px;
   width: 60px;
-  top: 40%;
-  right: 40%;
+  top: 67%;
+  left: 7%;
+  filter: saturate(50%);
 }
 
 #img2 {
   display: block;
   position: absolute;
-  height: 70px;
+  height: 80px;
   width: 60px;
-  top: 40%;
-  right: 35%;
+  top: 67%;
+  left: 14%;
+  filter: saturate(50%);
 }
 
 #img3 {
   display: block;
   position: absolute;
-  height: 70px;
+  height: 80px;
   width: 60px;
-  top: 40%;
-  right: 30%;
+  top: 67%;
+  left: 21%;
+  filter: saturate(50%);
 }
 
 #img4 {
@@ -43,8 +46,9 @@ img {
   position: absolute;
   height: 70px;
   width: 60px;
-  top: 40%;
-  right: 25%;
+  top: 68%;
+  left: 28%;
+  filter: saturate(50%);
 }
 
 #img5 {
@@ -52,26 +56,29 @@ img {
   position: absolute;
   height: 70px;
   width: 75px;
-  top: 40%;
-  right: 19.6%;
+  top: 68%;
+  left: 33%;
+  filter: saturate(50%);
 }
 
 #img6 {
   display: block;
   position: absolute;
-  height: 70px;
-  width: 90px;
-  top: 40%;
-  right: 13%;
+  height: 60px;
+  width: 120px;
+  top: 69%;
+  left: 39%;
+  filter: saturate(50%);
 }
 
 #img7 {
   display: block;
   position: absolute;
   height: 70px;
-  width: 80px;
-  top: 55%;
-  right: 39%;
+  width: 90px;
+  top: 68%;
+  left: 48%;
+  filter: saturate(50%);
 }
 
 #img8 {
@@ -79,8 +86,9 @@ img {
   position: absolute;
   height: 70px;
   width: 65px;
-  top: 55%;
-  right: 34.5%;
+  top: 67%;
+  left: 56%;
+  filter: saturate(50%);
 }
 
 #img9 {
@@ -88,8 +96,9 @@ img {
   position: absolute;
   height: 70px;
   width: 60px;
-  top: 55%;
-  right: 30%;
+  top: 68%;
+  left: 63%;
+  filter: saturate(50%);
 }
 
 #img10 {
@@ -97,8 +106,9 @@ img {
   position: absolute;
   height: 70px;
   width: 100px;
-  top: 55%;
-  right: 22%;
+  top: 67%;
+  left: 69%;
+  filter: saturate(50%);
 }
 
 #img11 {
@@ -106,8 +116,9 @@ img {
   position: absolute;
   height: 95px;
   width: 95px;
-  top: 53%;
-  right: 16%;
+  top: 65.5%;
+  left: 77%;
+  filter: saturate(50%);
 }
 
 #img12 {
@@ -115,8 +126,9 @@ img {
   position: absolute;
   height: 75px;
   width: 60px;
-  top: 55%;
-  right: 12%;
+  top: 67%;
+  left: 84%;
+  filter: saturate(50%);
 }
 
 #img13 {
@@ -124,37 +136,9 @@ img {
   position: absolute;
   height: 60px;
   width: 80px;
-  top: 40%;
-  right: 7%;
-}
-
-#down {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 49.3%;
-  bottom: 50px;
-  opacity: 1;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  object-fit: cover;
-}
-
-#up {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 49.3%;
-  bottom: -133%;
-  opacity: 1;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  object-fit: cover;
-  transform: scaleX(-1) scaleY(-1);
+  top: 68%;
+  left: 90%;
+  filter: saturate(50%);
 }
 
 #arrow {
@@ -162,35 +146,71 @@ img {
   width: 50px;
 }
 
-
 .corners #corner1 {
   position: absolute;
-  top: 60px;
+  top: 10px;
   left: 20px;
-  opacity: 1;
 }
 
-.corners #corner2 {
-  position: fixed;
-  top: 300px;
-  right: 30px;
-  opacity: 0;
+#corner2 {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 179, 0, 0.581);
+
+}
+
+#next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 37%;
+  right: 5%;
   transform: rotate(45deg);
+  cursor: pointer;
+  background-color: rgba(255, 179, 0, 0);
+  border: none;
+  padding: 0;
+  object-fit: cover;
+  transition: all 0.2s ease-out;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .corners #corner3 {
   position: absolute;
   bottom: 60px;
   right: 20px;
-  opacity: 1;
 }
 
-.corners #corner4 {
-  position: fixed;
-  bottom: 300px;
-  left: 30px;
-  opacity: 0;
+#corner4 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 179, 0, 0.581);
+}
+
+#previous {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 37%;
+  right: 50%;
   transform: rotate(45deg);
+  cursor: pointer;
+  background-color: rgba(255, 179, 0, 0);
+  border: none;
+  padding: 0;
+  object-fit: cover;
+  transition: all 0.2s ease-out;
+  animation: glow 1s ease-in-out infinite alternate;
+} 
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #ffd700;
+  }
+  to {
+    box-shadow: 0 0 20px #ffd700;
+  }
 }
 
 #gmail {
@@ -242,53 +262,43 @@ img {
   width: 1380px; 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   
-  #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13 {
-  display: none;
-}
-
-  .corners #corner2 {
-    position: absolute;
-    top: 110%;
-    right: 40px;
-    height: 50px;
-    width: 50px;
-}
-
-  .corners #corner4 {
-    position: absolute;
-    top: 110%;
-    left: 40px;
-    height: 50px;
-    width: 50px;
-}
-
-  #stick1 {
-    bottom: -28%;
-    width: 200px;
-    left: 32%;
-}
-
-  #stick2 {
-    bottom: -112%;
-    left: 5%;
-    width: 360px;
-}
-
-  #arrow {
-    height: 40px;
-    width: 40px;
+  #imgs{
+    display: none;
   }
 
-  #down{
-    left: 45.5%;
-    bottom: 7%;  
+  .corners #corner1 {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+  }
+
+  .corners #corner3 {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+  }
+
+  #corner2, #corner4 {
+    height: 30px;
+    width: 30px;
+  }  
+
+  #next {
+    position: absolute;
+    top: 82%;
+    right: 20px;
+    height: 30px;
+    width: 30px;
 }
 
-  #up {
-    left: 45.5%;
-    bottom: -96%;
+  #previous {
+    position: absolute;
+    top: 82%;
+    left: 20px;
+    height: 30px;
+    width: 30px;
 }
 
   #gmail {
@@ -305,6 +315,220 @@ img {
     bottom: 10px;
     left: 47.3%;
 }
+}
 
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+
+  #img1 {
+    height: 50px;
+    width: 40px;
+    top: 40%;
+    left: 10%;
+  }
+  #img2 {
+    height: 50px;
+    width: 40px;
+    top: 40%;
+    left: 20%;
+  }
+  #img3 {
+    height: 50px;
+    width: 40px;
+    top: 40%;
+    left: 30%;
+  }
+  #img4 {
+    height: 50px;
+    width: 45px;
+    top: 40.3%;
+    left: 40%;
+  }
+  #img5 {
+    height: 60px;
+    width: 60px;
+    top: 39.5%;
+    left: 50%;
+  }
+  #img6 {
+    height: 50px;
+    width: 80px;
+    top: 40.4%;
+    left: 62%;
+  }
+  #img7 {
+    height: 60px;
+    width: 80px;
+    top: 39%;
+    left: 80%;
+  }
+  #img8 {
+    height: 50px;
+    width: 50px;
+    top: 47%;
+    left: 5%;
+  }
+  #img9 {
+    top: 46.7%;
+    left: 17%;
+  }
+  #img10 {
+    height: 50px;
+    width: 90px;
+    top: 47%;
+    left: 31%;
+  }
+  #img11 {
+    top: 45.5%;
+    left: 48%;
+  }
+  #img12 {
+    height: 60px;
+    width: 50px;
+    top: 47%;
+    left: 66%;
+  }
+  #img13 {
+    height: 50px;
+    width: 60px;
+    top: 47%;
+    left: 80%;
+    }
+
+  .corners #corner1 {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+  }
+
+  .corners #corner3 {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+  }
+
+  #corner2, #corner4 {
+    height: 30px;
+    width: 30px;
+  }  
+
+  #next {
+    position: absolute;
+    top: 82%;
+    right: 100px;
+    height: 30px;
+    width: 30px;
+}
+
+  #previous {
+    position: absolute;
+    top: 82%;
+    left: 100px;
+    height: 30px;
+    width: 30px;
+}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+  #img1 {
+    height: 50px;
+    width: 40px;
+    top: 87%;
+    left: 1%;
+  }
+  #img2 {
+    height: 50px;
+    width: 40px;
+    top: 87%;
+    left: 7%;
+  }
+  #img3 {
+    height: 50px;
+    width: 40px;
+    top: 87%;
+    left: 13%;
+  }
+  #img4 {
+    height: 50px;
+    width: 40px;
+    top: 87.3%;
+    left: 19%;
+  }
+  #img5 {
+    height: 60px;
+    width: 60px;
+    top: 86.6%;
+    left: 23%;
+  }
+  #img6 {
+    height: 50px;
+    width: 80px;
+    top: 87.4%;
+    left: 30%;
+  }
+  #img7 {
+    height: 50px;
+    width: 80px;
+    top: 87%;
+    left: 40%;
+  }
+  #img8 {
+    height: 50px;
+    width: 50px;
+    top: 87%;
+    left: 51%;
+  }
+  #img9 {
+    height: 50px;
+    width: 50px;
+    top: 87%;
+    left: 58%;
+  }
+  #img10 {
+    height: 50px;
+    width: 80px;
+    top: 87%;
+    left: 66%;
+  }
+  #img11 {
+    height: 80px;
+    width: 80px;
+    top: 85.3%;
+    left: 75%;
+  }
+  #img12 {
+    height: 65px;
+    width: 50px;
+    top: 86.5%;
+    left: 85%;
+  }
+  #img13 {
+    height: 50px;
+    width: 60px;
+    top: 87%;
+    left: 92%;
+    }
+
+
+  #corner2, #corner4 {
+    height: 40px;
+    width: 40px;
+  }  
+  #next {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+}
+
+  #previous {
+    position: absolute;
+    top: 40%;
+    right: 44%;
+    height: 40px;
+    width: 40px;
+} 
 
 }

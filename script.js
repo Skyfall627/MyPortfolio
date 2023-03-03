@@ -1,4 +1,4 @@
-// Navigation menu animation
+/* Navigation menu animation
 function openNav() {
   var burger = document.getElementById("Hamburger");
   burger.style.width = "100%";
@@ -11,7 +11,48 @@ function closeNav() {
   burger.style.height = "0";
 }
     
-// Function to make corners transparent on scroll
+
+*/
+
+// Next Project animation 
+
+function switchDiv() {
+  var activeDiv = document.querySelector(".active");
+  var nextDiv = activeDiv.nextElementSibling;
+  
+  // If there's no next sibling, go back to the first div
+  if (!nextDiv) {
+    nextDiv = document.getElementById("project1");
+  }
+
+  // Toggle the active and hidden classes for the two divs
+  activeDiv.classList.remove("active");
+  activeDiv.classList.add("hidden");
+  nextDiv.classList.remove("hidden");
+  nextDiv.classList.add("active");
+}
+
+
+// Previous Project animation
+
+function previousDiv() {
+  var activeDiv = document.querySelector(".active");
+  var div = activeDiv.previousElementSibling;
+
+  // If there's no previous sibling or if it is the .project class, go to the last div
+  if (!div || div.classList.contains("null")) {
+    div = document.getElementById("project3");
+  }
+
+  // Toggle the active and hidden classes for the two divs
+  activeDiv.classList.remove("active");
+  activeDiv.classList.add("hidden");
+  div.classList.remove("hidden");
+  div.classList.add("active");
+}
+
+
+/* Function to make corners transparent on scroll
 function fadeOut() {
   var image1 = document.getElementById("corner1");
   var image3 = document.getElementById("corner3");
@@ -39,7 +80,7 @@ window.addEventListener("scroll", function() {
 });
 
 
-// make the page scroll down after clicking the arrow
+//  make the page scroll down after clicking the arrow
 function scrollToId(id) {
   var element = document.getElementById(id);
   if (element) {
@@ -51,7 +92,7 @@ function scrollToId(id) {
   }
 }
 
-
+*/
 
 
 

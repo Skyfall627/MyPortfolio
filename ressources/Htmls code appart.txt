@@ -1,0 +1,33 @@
+<!-- Navigation Bar 
+
+    <nav id="Hamburger" class="rightbar">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#Hamburger" id="II">INTRO</a>
+     <a href="#projects" id="PP">PROJECTS</a>
+     <a href="https://skyfall627.github.io/MyPortfolio/ressources/Mohammed_Saidi_CV.pdf" id="CV">CV</a>
+    </nav>
+
+    <div class="burger">
+      <i onclick="openNav()" id="mini" class="uil uil-bars"></i>
+    </div> -->
+
+
+    <!--<div id="project4" class="hidden">
+   <a href="" target="_blank"><h2>Template</h2></a>
+    <br>
+    <p>template template template template template template template template template template </p>
+    <p>template template template template template template template template template template </p>
+    <br>
+    <h3>Technologies</h3>
+    <br>
+    <ul style="list-style-type:none;">
+      <li>Visual Studio</li>
+      <li>Java</li>
+      <li>template</li>
+      <li>template</li>
+    </ul>
+  </div>  -->
+
+   <!-- <button type="button" id="up" onclick="switchDiv()">
+      <img src="https://skyfall627.github.io/MyPortfolio/ressources/down.png" id="arrow" alt="up">
+    </button> --> 

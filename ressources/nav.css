@@ -1,0 +1,104 @@
+
+/* The Navigation Menu (has been removed for better design) */
+
+.rightbar {
+    max-height: 50px; 
+    display: none;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(37, 37, 37); 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 50px; 
+    transition: 0.5s; 
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+    text-decoration: none;
+  }
+  
+.rightbar #II {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: none;
+    position: absolute;
+    transition: 0.3s;
+    left: 23%;
+    top: 4px;
+  }
+
+  .rightbar #PP {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: none;
+    position: absolute;
+    transition: 0.3s;
+    left: 45%;
+    top: 4px;
+  }
+  
+  .rightbar #CV {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: none;
+    position: absolute;
+    transition: 0.3s;
+    left: 75%;
+    top: 4px;
+  }
+
+
+  
+.rightbar .closebtn {
+    display: none;
+    position: absolute;
+    text-align: right;
+    top: 5px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+.rightbar .closebtn:hover {
+  color: gold;
+}
+
+.rightbar #CV:hover {
+    color: gold;
+}
+
+.rightbar #II:hover {
+  color: gold;
+}
+
+.rightbar #PP:hover {
+  color: gold;
+}
+
+.burger {
+    padding: 15px;
+    color: azure;
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37); 
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+    overflow: hidden;
+    display: none;
+  }
+
+.burger #mini:hover{
+   color: yellow;
+   cursor: pointer;
+}
+
+

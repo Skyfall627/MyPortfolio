@@ -16,6 +16,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0.9);
+  overflow: hidden;
 }
 
 #top{
@@ -26,8 +27,19 @@ body{
 
 #pinpoint{
   position: absolute;
-  bottom: -30px;
+  bottom: 80px;
   justify-items: center;
+  height: 10px;
+  width: 100%;
+}
+
+#space{
+  height: 800px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 0%;
+  padding: 10px;
 }
 
 #introduction {
@@ -37,75 +49,53 @@ body{
 #introduction h1{
   font-size: 3rem;
   display: block;
-  left: 9%;
+  left: 5%;
   position: absolute;
-  top: 30%;
+  top: 13%;
 }
 
 #introduction h2{
   font-size: 2rem;
   display: block;
-  right: 25.5%;
+  left: 5%;
   position: absolute;
-  top: 30%;
+  top: 60%;
 }
 
 #intro {
   display: block;
   position: absolute;
-  max-width: 40%;
+  max-width: 30%;
   justify-content: center;
-  top: 40%;
-  left: 10%;
+  top: 25%;
+  left: 7%;
   text-align: left;
 }
 
-#projects h1{
-  font-size: 3rem;
+.projects h1{
+  font-size: 2.3rem;
   position: absolute;
   text-align: center;
-  top: 95%;
-  left: 45%;
+  left: 50%;
+  top: 14%;
 }
 
-.project1 {
+#project1, #project2, #project3{
   height: 500px;
   position: absolute;
-  display: inline-block;
-  max-width: 30%;
-  left: 10%;
-  top: 110%;
+  max-width: 40%;
+  right: 9%;
+  top: 25%;
   text-align: center;
+  transition: all 1s ease-out;
 }
 
-.project2 {
-  height: 500px;
-  position: absolute;
-  display: inline-block;
-  max-width: 30%;
-  right: 10%;
-  top: 110%;
-  text-align: center;
-}
-
-.project3 {
-  height: 500px;
-  position: absolute;
-  display: inline-block;
-  max-width: 30%;
-  left: 10%;
-  top: 170%;
-  text-align: center;
-}
-
-.project4 {
-  height: 500px;
-  position: absolute;
+.hidden {
   display: none;
-  max-width: 30%;
-  right: 10%;
-  top: 170%;
-  text-align: center;
+}
+
+.active {
+  z-index: 1;
 }
 
 .projects li:hover{
@@ -134,137 +124,25 @@ footer {
   box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
 }
 
-
-/* The Navigation Menu */
-
-.rightbar {
-    max-height: 50px; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: rgb(37, 37, 37); 
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-top: 50px; 
-    transition: 0.5s; 
-    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
-    text-decoration: none;
-  }
-  
-.rightbar #II {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: azure;
-    display: inline-block;
-    position: absolute;
-    transition: 0.3s;
-    left: 23%;
-    top: 4px;
-  }
-
-  .rightbar #PP {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: azure;
-    display: inline-block;
-    position: absolute;
-    transition: 0.3s;
-    left: 45%;
-    top: 4px;
-  }
-  
-  .rightbar #CV {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: azure;
-    display: inline-block;
-    position: absolute;
-    transition: 0.3s;
-    left: 75%;
-    top: 4px;
-  }
-
-
-  
-.rightbar .closebtn {
-    display: inline-block;
-    position: absolute;
-    text-align: right;
-    top: 5px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  
-.rightbar .closebtn:hover {
-  color: gold;
-}
-
-.rightbar #CV:hover {
-    color: gold;
-}
-
-.rightbar #II:hover {
-  color: gold;
-}
-
-.rightbar #PP:hover {
-  color: gold;
-}
-
-.burger {
-    padding: 15px;
-    color: azure;
-    position: absolute;
-    top: 0;
-    left : 0;
-    width: 100%;
-    background-color: rgb(37, 37, 37); 
-    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
-    overflow: hidden;
-  }
-
-.burger #mini:hover{
-   color: yellow;
-   cursor: pointer;
-}
-
+ 
 /* In case website is opened in mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body{
-    height: 1230px;
-  }
-  
-  .rightbar #II {
-    font-size: 20px;
-    left: 5%;
+   overflow: visible;
   }
 
-  .rightbar #PP {
-    font-size: 20px;
-    left: 35%;
+  #space {
+    height: 1300px;
+    top: 0;
   }
-  
-  .rightbar #CV {
-    font-size: 20px;
-    left: 75%;
-  }
-
-
   
   #introduction h1{
     font-size: 2.5rem;
     display: block;
-    left: 15%;
+    left: 22%;
     position: absolute;
-    top: 20%;
+    top: 5%;
   }
   
   #introduction h2{
@@ -274,58 +152,88 @@ footer {
   #intro {
     display: block;
     position: absolute;
-    max-width: 85%;
+    max-width: 70%;
     justify-content: center;
-    top: 30%;
-    left: 10%;
-    text-align: left;
+    top: 10%;
+    left: 17%;
+    text-align: center;
   }
 
-  #projects h1{
-    font-size: 2.5rem;
+  .projects h1{
+    font-size: 2rem;
     position: absolute;
     text-align: center;
-    top: 110%;
-    left: 35%;
+    top: 55%;
+    left: 30%;
   }
 
-  .project1 {
-    height: 500px;
+  #project1, #project2, #project3 {
     position: absolute;
-    display: inline-block;
-    max-width: 46%;
-    left: 1%;
-    top: 125%;
-    text-align: center;
-  }
-  
-  .project2 {
-    height: 500px;
-    position: absolute;
-    display: inline-block;
-    max-width: 46%;
-    right: 1%;
-    top: 125%;
-    text-align: center;
-  }
-  
-  .project3 {
-    height: 500px;
-    position: absolute;
-    max-width: 46%;
-    left: 1%;
-    top: 210%;
-    text-align: center;
-  }
-  
-  .project4 {
-    height: 500px;
-    position: absolute;
-    max-width: 46%;
-    right: 1%;
-    top: 210%;
+    max-width: 80%;
+    left: 12%;
+    top: 62%;
     text-align: center;
   }
 
 }
 
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+
+  #introduction h2{
+    top: 36%;
+    left: 30%;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .projects h1{
+    top: 55%;
+    left: 40%;
+  }
+
+  #project1, #project2, #project3 {
+    left: 12%;
+    top: 60%;
+  }
+
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+  body{
+    overflow: visible;
+    height: 800px;
+   }
+  
+   #space {
+    height: 700px;
+    top: 0;
+  }
+
+  #introduction h1{
+    top: 1%;
+    left: 8%;
+  }
+
+  #introduction h2{
+    top: 74%;
+    left: 30%;
+  }
+
+  .projects h1{
+    top: 3%;
+    right: 3%;
+  }
+
+  #intro {
+    top: 15%;
+    max-width: 40%;
+  }
+
+  #project1, #project2, #project3 {
+    right: 5%;
+    top: 13%;
+  }
+
+}
